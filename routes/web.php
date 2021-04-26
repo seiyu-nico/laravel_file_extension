@@ -18,3 +18,11 @@ Route::get('{php_file}', function () {
 Route::get('{html_file}', function () {
     echo '<p>localhost/company.htmlでアクセスしています。</p>';
 })->where('html_file', 'company.html');
+
+Route::get('{php_file}', function () {
+    echo '<p>localhost/about.phpでアクセスしています。</p>';
+})->where('php_file', 'about.php');
+
+Route::get('{html_file}', function () {
+    echo '<p>localhost/about.htmlでアクセスしています。</p>';
+})->where('html_file', 'about.html');
